@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet"');
+
+ body{
+  width: 100%;
+  background-color:#f9f9f9;
+}
+ .homebody {
+  background-color:#F9F9F9 ;
+  display: grid;
+  grid-gap: 10px;
+  grid-padding: 10px;
+  grid-template-areas:
+  'video video'
+  'book facts'
+  'footer footer';
+}
+
+strong{
+	background-color: #5D4EE7;
+	color: white;
+	padding: 10px;
+}
+.heading{
+  grid-area: heading;
+  font-family: Arial;
+  background-color: #f9f9f9;
+  padding: 0;
+  top: 0;
+  width: 100%;
+  text-align: left;
+  color: #5D4EE7;
+  position: fixed;
+  left: 0%;
+}
+.heading img {
+  float: right;
+  height: 90px;
+  padding: 0;
+  right: 10px;
+  top: 10px;
+}
+
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+h3{
+  text-align: center;
+  font-style: italic;
+}
+
+video {
+    list-style-type: none;
+    width: 100%;
+    object-fit:cover; 
+    margin: 0 auto; 
+    overflow-x: hidden; 
+    padding: 13%; 
+}
+#video{
+  grid-area: video;
+  float: center;
+  margin: 20px;
+  height: 500px;
+  display:flex;
+  flex-wrap: wrap;
+}
+#book
+{
+  grid-are: book;
+  float: left;
+  font-family: 'Merriweather', serif;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  margin-top: 180px;
+  display:flex;
+  flex-wrap: wrap;
+  
+}
+article {
+  display: block;
+}
+
+ul {
+  float: left;
+  list-style-type: none;
+  background-color: #F64E6F;
+  padding: 0;
+  width: 100%;
+  
+}
+li a{
+
+  float: left;
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid #fff;
+  list-style-type: none;
+  
+}
+.homearticle {
+	text-align: left;
+}
+
+.figure {
+	padding: 20px;
+	top: 20px;
+	bottom: 20px;
+}
+
+#facts {
+  grid-area: facts;
+  float: right;
+  margin-top: 200px;
+  text-position: sticky;
+  grid-area: facts;
+  background-color: #111; 
+  padding: 20px;
+  color: white;
+  flex-wrap: wrap;
+}
+h4 {
+  position: sticky;
+}
+
+#points {
+		position: -webkit-sticky;
+	}
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   margin: -15px;
+   margin-top:10px;
+   padding: 10px;
+   background-color: #333;
+   color: white;
+   text-align: center;
+   display:flex;
+   flex-wrap: wrap;
+}
+.howcontent {
+  background-color:#F9F9F9 ;
+  display: grid;
+  margin-top: 180px;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr ;
+  
+}
+#shop {
+  background-color: #f9f9f9;
+  display: grid;
+  grid-auto-flow: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+#Solar panels {
+	grid-column: 2;
+	grid-row: 1 ;
+	display:flex;
+	flex-wrap: wrap;
+}
+#Charge Controller {
+	grid-column: 1;
+	grid-row: 1 ;
+	display:flex;
+	flex-wrap: wrap;
+}
+#Battery system {
+	grid-column: 3;
+	grid-row: 1 ;
+	display:flex;
+	flex-wrap: wrap;
+}
+#DC power {
+	grid-column: 3;
+	grid-row: 2;
+	display:flex;
+	flex-wrap: wrap;
+}
+#Inverter {
+	grid-column: 1;
+	grid-row: 4 ;
+	display:flex;
+	flex-wrap: wrap;
+}
+#AC power {
+	grid-column: 2 ;
+	grid-row: 2;
+	display:flex;
+	flex-wrap: wrap;
+}
+#statsbody {
+  background-color:#F9F9F9 ;
+  margin-top: 220px;
+  display: grid;
+  grid-gap: 10px;
+  grid-padding: 10px;
+  grid-template-areas:
+  'table shop';
+}
+
+.products {
+  background-color: #f9f9f9;
+  display: grid;
+  width: 600px;
+  grid-auto-flow: rows;
+  flex-wrap: wrap;
+  grid-area: shop;
+  float: right;
+}
+table.tableizer-table {
+		font-size: 12px;
+		border: 1px solid #CCC; 
+		font-family: Arial, Helvetica, sans-serif;
+		grid-area: table;
+		float: left;
+	} 
+	.tableizer-table td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+	.tableizer-table th {
+		background-color: #437E3D; 
+		color: #FFF;
+		font-weight: bold;
+	}
+}
+
+#formbody {
+	margin-top: 220px;
+	width: 100%;
+	display: grid;
+	grid-template-areas: 
+	'form shop'
+}
+
+#form {
+    margin-top: 220px;
+  	font-size: 1em;
+	background-color: #f9f9f9;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	padding: 10px;  
+	float: left;
+	grid-area: form;
+	display: grid;
+	grid-auto-flow: columns;
+}
+textarea{
+  width: 40%;
+  height: 200px;
+}
+input{
+  margin: 0 1.5%;
+  background-color: #ffffff;
+  width: 25%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  resize: vertical;
+}
