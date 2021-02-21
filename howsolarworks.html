@@ -13,22 +13,30 @@
             <link rel="stylesheet" href="css/style.css">
             <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
     </head>
-    <body id="howbody">
-        <header class="heading">
+		<body class="howcontent">
 		<a href="index.html">
-		<img src="img/Logo.png" alt="Logo"></a>
+			<img src="img/Logo.png" alt="Logo" class="logo" ></a>
+        <header class="heading">
             <h1>InHolland solar energy</h1>
             <h2>Make the world a better place</h2>
-        <nav class="nav">
-            <ul class="menu">
-				<li><a href="index.html"> Home </a></li>
-				<li><a href="eusolar.html"> EU Solar </a></li>
-                <li><a href="contact.html"> Contact </a></li>
-            </ul>
-        </nav>
+        <NAV class="menu-wrap">
+            <input type="checkbox" class="toggler">   
+        <aside class="hamburger"><article></article></aside>
+            <aside class="navbar menu">
+                <section class="fsec">
+                    <section class="sesec">
+                        <ul id="navul">
+                            <li><a href="index.html"> Home </a></li>
+							<li><a href="eusolar.html"> EU Solar </a></li>
+							<li><a href="contact.html"> Contact </a></li>
+                        </ul>
+                        
+                    </section>
+                </section> 
+            </aside>
+        </NAV>
         </header>
-		<section id="howcontent">
-		<article id = "Solar panels">
+		<article class = "Solarpanels">
 				<header>
 				<h2>Solar Panels</h2>
 				</header>
@@ -39,9 +47,26 @@
 				electrons. The electrons then travel through the semi-conductor creating 
 				an electrical current (3). Solar thermal is a system of giant mirrors 
 				that reflect and concentrate the sun's rays to heat a fluid, which 
-				produces steam to power a turbine that creates electricity </p>
+				produces steam to power a turbine that creates electricity. Photovoltaic modules use 
+				light energy (photons) from the Sun to generate electricity through the photovoltaic effect.</p>
+				Most modules use wafer-based crystalline silicon cells or thin-film cells. The structural (load carrying) member of a module can be either the top layer or the back layer. Cells must be protected from mechanical damage and moisture. Most modules are rigid, but semi-flexible ones based on thin-film cells are also available. The cells are connected electrically in series, one to another to the desired voltage, and then in parallel to increase amperage. The wattage of the module is the mathematical product of the voltage and the amperage of the module. The manufacture specifications on solar panels are obtained under standard condition which is not the real operating condition the solar panels are exposed to on the installation site.
+				A PV junction box is attached to the back of the solar panel and functions as its output 
+				interface. External connections for most photovoltaic modules use MC4 connectors to 
+				facilitate easy weatherproof connections to the rest of the system. A USB power interface can also be used.
+				Module electrical connections are made in series to achieve a desired output voltage or 
+				in parallel to provide a desired current capability (amperes) of the solar panel or the PV 
+				system. The conducting wires that take the current off the modules are sized according to 
+				the ampacity and may contain silver, copper or other non-magnetic conductive transition 
+				metals. Bypass diodes may be incorporated or used externally, in case of partial module 
+				shading, to maximize the output of module sections still illuminated.
+				Some special solar PV modules include concentrators in which light is focused by lenses 
+				or mirrors onto smaller cells. This enables the use of cells with a high cost per unit area 
+				(such as gallium arsenide) in a cost-effective way.
+				Solar panels also use metal frames consisting of racking components, brackets, reflector 
+				shapes, and troughs to better support the panel structure.
+				</p>
             </article>
-			<article id = "Charge Controller">
+			<article class = "ChargeController">
 				<header>
 				<h2>Charge Controller</h2>
 				</header>
@@ -54,7 +79,7 @@
 				charge controllers have overload protection built-in, much like a trip 
 				switch, it will protect against any faulty appliances or short circuits.</p>
             </article>
-			<article id = "Battery system">
+			<article class = "Batterysystem">
 				<header>
 				<h2>Battery system</h2>
 				</header>
@@ -67,7 +92,7 @@
 				batteries, for example, can enable a greater feed-in of renewables into 
 				the grid by storing excess generation and by firming renewable energy output.</p>
             </article>
-			<article id = "DC power">
+			<article class = "DCpower">
 				<header>
 				<h2>DC power</h2>
 				</header>
@@ -77,7 +102,7 @@
 				losses. Several years later (in 1887), George Westinghouse bought Tesla’s 
 				patents related to AC systems and employed him to continue its development.</p>
             </article>
-			<article id = "Inverter">
+			<article class = "Inverter">
 				<header>
 				<h2>Inverter</h2>
 				</header>
@@ -92,7 +117,7 @@
 				systems. Their common bond is the storage battery, which absorbs and releases 
 				energy in the form of direct current (DC) electricity.</p>
             </article>
-			<article id = "AC power">
+			<article class = "ACpower">
 				<header>
 				<h2>AC power</h2>
 				</header>
@@ -103,23 +128,24 @@
 				creating a periodic back and forth motion for the current. Despite this current 
 				flowing back and forth many times a second, the energy still essentially flows 
 				continuously from the power plant to the electronic devices.</p>
+				</section>
             </article>
-			</section>
-		<aside id="shop">
-				<section id ="product1">
+		<aside class="shop">
+				<section class ="product1">
 				<figure>
 				<a href="http://www.ikwilzonneenergie.nl/Victron-Energy-omvormer-smart-12V-2000W-230V">
 				<img src="img/VictronInverter.jpg" alt="Victron 175Wp 12Volt Solar panel set"></a>
 				<a href="http://www.ikwilzonneenergie.nl/Victron-Energy-omvormer-smart-12V-2000W-230V"><strong>Order Product</a></strong></figcaption>
 				</section>
-				<section = "product2">
+				<section class = "product2">
                 <figure>
 				<a href="http://www.ikwilzonneenergie.nl/175Wp-12Volt-zonne-energie-set">
 				<img src="img/VictronPanel.jpg" alt="Victron 175Wp 12Volt Solar panel set"></a>
-				<a href="http://www.ikwilzonneenergie.nl/175Wp-12Volt-zonne-energie-set"><strong>Order Product</strong></a></figcaption>
+				<a href="http://www.ikwilzonneenergie.nl/175Wp-12Volt-zonne-energie-set">
+				<strong>Order Product</strong></a></figcaption>
 				</figure>
 				</section>
-				<section id = "product3">
+				<section class = "product3">
                 <figure>
 				<a href="http://www.ikwilzonneenergie.nl/Victron-SmartSolar-MPPT-100-50-12V-24V">
 				<img src="img/Victron100_50.jpg" alt="Victron Energy SmartSolar MPPT 100-50 12V 24V Charge Controller"></a>
@@ -127,6 +153,12 @@
 				</figure>
 				</section>
 		</aside>
-        <footer class="footer">&copy; 2020 Junayeth Shahriar Provat | Student No - 640885</footer>
-        </body>   
+		<aside class="cook">
+				We use cookies to provide website functionality, to analyze traffic on our Sites, 
+				personalize content, serve targeted advertisements and to enable social media functionality. 
+				Our Cookie Statement provides more information and explains how to update your cookie settings. 
+				View our <a href="#">Cookie Statement.</a>
+			</aside>
+        <footer class="foot">&copy; 2020 Junayeth Shahriar Provat | Student No - 640885</footer>
+		</body>
 		</html>

@@ -1,38 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"');
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet"');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap%27" rel="stylesheet"');
+
+
 
  body{
-  width: 100%;
-  background-color:#f9f9f9;
+  
+  background-color:white;
+  font-family: Oswald;
 }
- .homebody {
-  background-color:#F9F9F9 ;
-  display: grid;
-  grid-gap: 10px;
-  grid-padding: 10px;
-  grid-template-areas:
-  'video video'
-  'book facts'
-  'footer footer';
+.toggler{
+  display: none;
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  float: center;
+}
+.siteHeader{
+  color: #5D4EE7;
+  
+
+}
+.mainheading{
+  
+  font: Oswald;
+
 }
 
-strong{
-	background-color: #5D4EE7;
-	color: white;
-	padding: 10px;
-}
-.heading{
-  grid-area: heading;
-  font-family: Arial;
-  background-color: #f9f9f9;
-  padding: 0;
-  top: 0;
-  width: 100%;
-  text-align: left;
-  color: #5D4EE7;
-  position: fixed;
-  left: 0%;
-}
 .heading img {
   float: right;
   height: 90px;
@@ -47,86 +44,63 @@ h1{
 h2{
   text-align: center;
 }
-h3{
-  text-align: center;
-  font-style: italic;
-}
+#video {
+  display: block;
 
-video {
     list-style-type: none;
-    width: 100%;
-    object-fit:cover; 
+    width: 80%;
+     align-self: center;
     margin: 0 auto; 
     overflow-x: hidden; 
-    padding: 13%; 
+    padding: 2%; 
 }
-#video{
-  grid-area: video;
-  float: center;
-  margin: 20px;
-  height: 500px;
-  display:flex;
-  flex-wrap: wrap;
-}
-#book
-{
-  grid-are: book;
-  float: left;
-  font-family: 'Merriweather', serif;
-  left: 0;
-  bottom: 0;
-  text-align: center;
-  margin-top: 180px;
-  display:flex;
-  flex-wrap: wrap;
-  
-}
-article {
-  display: block;
-}
+
+
+
 
 ul {
   float: left;
   list-style-type: none;
   background-color: #F64E6F;
+  margin-top: 0;
   padding: 0;
   width: 100%;
   
+
+  
+}
+
+li{
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  
 }
 li a{
+
 
   float: left;
   display: flex;
   color: #f2f2f2;
   text-align: center;
   margin: 0;
-  padding: 10px;
+  padding: 20px;
   text-decoration: none;
-  border: 1px solid #fff;
+  border: none;
   list-style-type: none;
   
 }
-.homearticle {
-	text-align: left;
+li a:hover{
+  color: black;
+  background-color: #f2f2f2;
+  transition: .5s;
+
 }
 
-.figure {
-	padding: 20px;
-	top: 20px;
-	bottom: 20px;
-}
 
-#facts {
-  grid-area: facts;
-  float: right;
-  margin-top: 200px;
-  text-position: sticky;
-  grid-area: facts;
-  background-color: #111; 
-  padding: 20px;
-  color: white;
-  flex-wrap: wrap;
-}
+
+
+
 h4 {
   position: sticky;
 }
@@ -150,21 +124,76 @@ h4 {
 .howcontent {
   background-color:#F9F9F9 ;
   display: grid;
-  margin-top: 180px;
+  margin-top: 10px;
   padding: 10px;
-  grid-gap: 10px;
-  grid-padding: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr ;
-  
-}
-#shop {
-  background-color: #f9f9f9;
   display: grid;
-  grid-auto-flow: column;
-  flex-wrap: wrap;
-  overflow: hidden;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 100 300px 200px 200px 200px 200px 200px 200px 200px 200px 200px ;
+  gap: 5px 5px;
+  grid-template-areas:
+	"logo logo logo"
+	"heading heading heading"
+    "ChargeController Solarpanels Batterysystem"
+    "ChargeController Solarpanels Batterysystem"
+    "Inverter Solarpanels Batterysystem"
+    "Inverter Solarpanels DCpower"
+    "Inverter Solarpanels DCpower"
+    "Inverter Solarpanels DCpower"
+    "Inverter ACpower ACpower"
+    "shop shop shop"
+	"shop shop shop"
+	"foot foot cook"
 }
+.heading { grid-area: heading } 
+.Solarpanels { grid-area: Solarpanels; }
+.ChargeController { grid-area: ChargeController; }
+.Batterysystem { grid-area: Batterysystem; }
+.DCpower { grid-area: DCpower; }
+.Inverter { grid-area: Inverter; }
+.ACpower { grid-area: ACpower; }
+.product1 
+{ 
+	float: left;
+	width: 30%;
+}
+.product2 
+{   
+	float: center;
+	width: 30%;
+}
+.product2 
+{   
+	float: right;
+	width: 30%;
+}
+.foot { 
+   grid-area: foot;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   margin: -15px;
+   margin-top:10px;
+   padding: 10px;
+   background-color: #333;
+   color: white;
+}
+.cook { 
+  grid-area: cook;
+  color: #FFF;
+  float: left;
+  wider: 50%;
+  opacity: 50%;
+  background-color: #FA0;
+  position: fixed;
+  bottom: 0;
+  margin-left: 50%;
+}
+
+.shop {
+	grid-area: shop;
+  background-color: #f9f9f9;
+}
+
 #Solar panels {
 	grid-column: 2;
 	grid-row: 1 ;
@@ -203,12 +232,7 @@ h4 {
 }
 #statsbody {
   background-color:#F9F9F9 ;
-  margin-top: 220px;
-  display: grid;
-  grid-gap: 10px;
-  grid-padding: 10px;
-  grid-template-areas:
-  'table shop';
+  margin-top: 10px;
 }
 
 .products {
@@ -220,53 +244,50 @@ h4 {
   grid-area: shop;
   float: right;
 }
-table.tableizer-table {
+.tablefoot {
+	float: bottom;
+}
+table.table {
 		font-size: 12px;
 		border: 1px solid #CCC; 
 		font-family: Arial, Helvetica, sans-serif;
 		grid-area: table;
 		float: left;
 	} 
-	.tableizer-table td {
+	.table td {
 		padding: 4px;
 		margin: 3px;
 		border: 1px solid #CCC;
 	}
-	.tableizer-table th {
+	.table th {
 		background-color: #437E3D; 
 		color: #FFF;
 		font-weight: bold;
 	}
-}
+
 
 #formbody {
-	margin-top: 220px;
+	margin-top: 10px;
 	width: 100%;
-	display: grid;
-	grid-template-areas: 
-	'form shop'
 }
 
 #form {
-    margin-top: 220px;
-  	font-size: 1em;
+    margin-top: 10px;
 	background-color: #f9f9f9;
 	font-weight: bold;
 	font-family: 'Roboto', sans-serif;
 	padding: 10px;  
 	float: left;
-	grid-area: form;
 	display: grid;
-	grid-auto-flow: columns;
 }
 textarea{
-  width: 40%;
+  width: 80%;
   height: 200px;
 }
 input{
   margin: 0 1.5%;
   background-color: #ffffff;
-  width: 25%;
+  width: 80%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -274,4 +295,251 @@ input{
   margin-top: 6px;
   margin-bottom: 20px;
   resize: vertical;
+}
+
+.book
+{
+  display: flex;
+  
+  width: 100%;
+  font-family: 'Roboto', serif;
+  
+  text-align: center;
+  
+  box-sizing: border-box;
+  
+  
+}
+
+.homearticle {
+  
+  display: flex;
+  text-align: left;
+  font: Roboto;
+  font-size: 18px;
+  float: left;
+  
+  margin: 2%;
+  padding: 0;
+
+}
+.articles
+{
+  display: block;
+  font-size: 24pt;
+  float: left;
+  padding: 0;
+  margin: 0;
+  max-width: 70%;
+  margin: 5%;
+  background-color: #f9f9f9;
+  margin-left: 3%;
+
+}
+.facts {
+  display: block;
+  float: left;
+  max-width: 500px;
+  max-height: 500px;
+  margin-top: 200px;
+  font-family: 'Merriweather', serif;
+  background-color: #FF8C00; 
+  padding: 0px;
+  margin-top: 5%;
+  position: relative;
+  color: white;
+  
+  
+}
+.figure {
+	
+  display: block;
+  float: right;
+  margin: 0;
+  padding: 3%;
+
+}
+
+article {
+  padding: 3%;
+  color: #00000;
+
+
+}
+
+figcaption
+{
+  color: #000000;
+}
+strong
+{
+	background-color: #5D4EE7;
+	color: white;
+	padding: auto;
+}
+.cookie
+{
+  display: fixed-box;
+  color: #FFF;
+  float: left;
+  opacity: 50%;
+  background-color: #FA0;
+  position: fixed;
+  bottom: 0;
+  margin-left: 50%;
+}
+
+@media(max-width:480px)
+{
+  .toggler
+  {
+    display: block;
+  }
+  .menu-wrap
+  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .menu-wrap .toggler
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 3.12em;
+    height: 3.12em;
+    opacity: 0;
+  }
+  .menu-wrap .hamburger
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 2em;
+    height: 2em;
+    padding: 0.5rem;
+    background: #F64E6F;
+    display: flex;
+  }
+  .menu-wrap .hamburger article
+  {
+    position: relative;
+    width: 100%;
+    height: 0.125em;
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+  .menu-wrap .hamburger article::before,
+  .menu-wrap .hamburger article::after
+  {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -0.625em;
+    width: 100%;
+    height: 0.125em;
+    background: inherit;
+  }
+  .menu-wrap .hamburger article::after
+  {
+    top: 0.625em;
+  }
+  .menu-wrap .toggler:checked + .hamburger article
+  {
+    transform: rotate(135deg);
+  }
+
+  .menu-wrap .toggler:checked + .hamburger article::before,
+  .menu-wrap .toggler:checked + .hamburger article::after
+  {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  .menu-wrap .toggler:checked + .hamburger article:hover
+  {
+    transform: rotate(225deg);
+  }
+
+  .menu-wrap .toggler:checked ~ .menu
+  {
+    visibility: visible;
+  }
+
+  .menu-wrap .toggler:checked ~ .menu .fsec
+  {
+    transform: scale(1);
+    transition-duration: 0.75s;
+  }
+
+  .menu-wrap .toggler:checked ~ .menu .fsec .secsec
+  {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+  }
+
+  .menu-wrap .menu
+  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+  }
+  .menu-wrap .menu .fsec
+  {
+    background: #F64E6F;
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    transform: scale(0);
+    transition: all 0.4s ease;
+    opacity: 0.8;
+  }
+  .menu-wrap .menu .secsec
+  {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vw;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+
+  }
+  .menu-wrap .menu .secsec ul li
+  {
+    list-style: none;
+    color: #ffff;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .menu-wrap .menu .secsec ul li a
+  {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+  }
+
+  .book
+  {
+    display: block;
+  }
+  .facts
+  {
+    position: relative;
+    top: 0px;
+  }
+
 }
